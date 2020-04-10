@@ -1,6 +1,8 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import main from "@/views/main"
+// import main from "@/views/main"
+// import PaymentFinish from "../views/PaymentFinish/PaymentFinish"
+import MeetUp from "../views/Class/MeetUp"
 
 Vue.use(VueRouter);
 
@@ -8,10 +10,18 @@ Vue.use(VueRouter);
 export default new VueRouter({
     mode : 'history',
     routes: [
+        // {
+        //     path: '/',
+        //     name: 'main',
+        //     component: main  
+        // },
+        // {
+        //     path: '/',
+        //     component: PaymentFinish
+        // },
         {
             path: '/',
-            name: 'main',
-            component: main  
+            component: MeetUp
         }
     ]
 })
