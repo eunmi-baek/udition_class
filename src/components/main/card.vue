@@ -102,6 +102,7 @@ export default {
     .date {
       font-size: 14px;
       font-weight: bold;
+      margin-top: 14px;
     }
 
     .circle {
