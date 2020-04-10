@@ -1,6 +1,7 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import main from "@/views/main"
+import spec from "@/views/spec"
 
 Vue.use(VueRouter);
 
@@ -12,6 +13,11 @@ export default new VueRouter({
             path: '/',
             name: 'main',
             component: main  
+        },
+        {
+            path: '/spec',
+            name: 'spec',
+            component: spec  
         }
     ]
 })
