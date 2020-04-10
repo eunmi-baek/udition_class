@@ -4,6 +4,7 @@ import main from "@/views/main"
 import Login from "@/views/login/Login"
 import paymentFinish from "@/views/paymentFinish/paymentFinish"
 import meetUp from "@/views/class/meetUp"
+import myProfile from "@/views/myPage/myProfile"
 
 Vue.use(VueRouter);
 
@@ -30,6 +31,11 @@ export default new VueRouter({
             path:'/meetup',
             name: 'meetup',
             component:meetUp
+        },
+        {
+            path:'/myprofile',
+            name: 'myprofile',
+            component:myProfile
         }
     ]
 })

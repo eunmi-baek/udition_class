@@ -24,7 +24,7 @@
 </template>
 
 <script>
-import card from "@/components/main/card";
+import card from "@/components/card";
 
 export default {
   name: "main",
