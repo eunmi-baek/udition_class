@@ -44,9 +44,11 @@
     </div>
   </div>
 </template>
+
 <script>
 export default {};
 </script>
+
 <style scoped lang="scss">
 .payment-finish-wrapper {
   width: 100%;
@@ -115,6 +117,7 @@ export default {};
         .body-info-wrapper {
           color: #ffffff;
           position: relative;
+
           .body-title {
             position: absolute;
             margin: 21px 90px 58px 245px;
@@ -188,6 +191,7 @@ export default {};
       justify-content: space-between;
       color: #000000;
       margin-top: 17px;
+
       .final-expense {
         width: 92px;
         height: 24px;
