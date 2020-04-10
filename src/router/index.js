@@ -2,6 +2,9 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import main from "@/views/main"
 import spec from "@/views/spec"
+import Login from "@/views/login/Login"
+import paymentFinish from "@/views/paymentFinish/paymentFinish"
+import meetUp from "@/views/class/meetUp"
 
 Vue.use(VueRouter);
 
@@ -17,7 +20,22 @@ export default new VueRouter({
         {
             path: '/spec',
             name: 'spec',
-            component: spec  
+            component: spec 
+        },
+        { 
+            path:'/login',
+            name: 'Login',
+            component:Login
+        },
+        {
+            path:'/payment',
+            name: 'payment',
+            component:paymentFinish
+        },
+        {
+            path:'/meetup',
+            name: 'meetup',
+            component:meetUp
         }
     ]
 })
