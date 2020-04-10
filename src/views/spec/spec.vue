@@ -171,14 +171,14 @@ export default {
           height: 56px;
           border-radius: 4px;
           border: solid 1px #c4c7cd;
-          background: url("../assets/images/spec/bookmark.png") no-repeat center
-            center;
+          background: url("../../assets/images/spec/bookmark.png") no-repeat
+            center center;
           background-size: 20px 18px;
           cursor: pointer;
 
           &.like {
             border: solid 1px #f3165b;
-            background: #f3165b url("../assets/images/spec/bookmark_c.png")
+            background: #f3165b url("../../assets/images/spec/bookmark_c.png")
               no-repeat center center;
             background-size: 20px 18px;
           }
