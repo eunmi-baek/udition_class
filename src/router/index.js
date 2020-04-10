@@ -1,7 +1,9 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 // import main from "@/views/main"
-import Login from "../views/login/Login"
+// import PaymentFinish from "../views/PaymentFinish/PaymentFinish"
+import MeetUp from "../views/Class/MeetUp"
+// import Login from "../views/login/Login"
 
 Vue.use(VueRouter);
 
@@ -14,10 +16,18 @@ export default new VueRouter({
         //     name: 'main',
         //     component: main  
         // },
+        // {
+        //     path: '/',
+        //     component: PaymentFinish
+        // },
         {
-            path:'/',
-            component:Login
+            path: '/',
+            component: MeetUp
         }
+        // {
+        //     path:'/',
+        //     component:Login
+        // }
     ]
 })
 
