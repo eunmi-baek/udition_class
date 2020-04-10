@@ -76,8 +76,8 @@ export default {
   flex-wrap: wrap;
 
   .card {
-    width: 323px;
-    margin-right: 26px;
+    width: 343px;
+    margin-right: 25px;
     margin-bottom: 60px;
     position: relative;
     cursor: pointer;
