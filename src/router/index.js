@@ -7,7 +7,7 @@ import paymentFinish from "@/views/paymentFinish/paymentFinish"
 import meetUp from "@/views/class/meetUp"
 import myProfile from "@/views/myPage/myProfile"
 import tutor from "@/views/tutor/tutor"
-
+import navBar from "@/components/navBar"
 Vue.use(VueRouter);
 
 // route 설정하기
@@ -48,6 +48,11 @@ export default new VueRouter({
             path:'/tutor',
             name: 'tutor',
             component: tutor
+        },
+        {
+            path:'/navBar',
+            name: 'navBar',
+            component: navBar
         }
     ]
 })
