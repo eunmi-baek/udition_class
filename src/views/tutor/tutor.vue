@@ -1,28 +1,43 @@
 <template>
   <div class="container">
+    <Header />
     <section>
       <ul class="tutor-list">
-        <li @click="detailType = 0" :class="{ active: detailType == 0 }">CLASS</li>
-        <li @click="detailType = 1" :class="{ active: detailType == 1 }">MEET UP</li>
-        <li @click="detailType = 2" :class="{ active: detailType == 2 }">ONE DAY</li>
+        <li @click="detailType = 0" :class="{ active: detailType == 0 }">
+          CLASS
+        </li>
+        <li @click="detailType = 1" :class="{ active: detailType == 1 }">
+          MEET UP
+        </li>
+        <li @click="detailType = 2" :class="{ active: detailType == 2 }">
+          ONE DAY
+        </li>
       </ul>
       <div class="tutor-detail">
         <div class="card" v-for="(card, i) in cards" :key="i">
           <div class="bg"></div>
           <img :src="card.img" alt />
           <p class="title">
-            {{card.title}}
-            <span>{{card.name}}</span>
+            {{ card.title }}
+            <span>{{ card.name }}</span>
           </p>
           <p class="button">클래스 참가하기</p>
         </div>
       </div>
     </section>
+    <Footer />
   </div>
 </template>
 
 <script>
+import Header from "@/components/header";
+import Footer from "@/components/footer";
+
 export default {
+  components: {
+    Header,
+    Footer
+  },
   data() {
     return {
       detailType: 0,
