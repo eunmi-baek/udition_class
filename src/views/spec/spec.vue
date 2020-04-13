@@ -30,9 +30,9 @@
       </div>
       <div class="detail">
         <ul class="detail-list">
-          <li @click="noticeType = 0" :class="{ active: noticeType == 0 }">클래스 소개</li>
-          <li @click="noticeType = 1" :class="{ active: noticeType == 1 }">커리큘럼</li>
-          <li @click="noticeType = 2" :class="{ active: noticeType == 2 }">후기</li>
+          <li @click="detailType = 0" :class="{ active: detailType == 0 }">클래스 소개</li>
+          <li @click="detailType = 1" :class="{ active: detailType == 1 }">커리큘럼</li>
+          <li @click="detailType = 2" :class="{ active: detailType == 2 }">후기</li>
         </ul>
         <div class="detail-cnt">
           <div class="intro"></div>
@@ -46,7 +46,7 @@
 export default {
   data() {
     return {
-      noticeType: 0,
+      detailType: 0,
       bookMark: false
     };
   },

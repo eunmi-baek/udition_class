@@ -1,6 +1,6 @@
 <template>
   <div class="info-container">
-    <header></header>
+    <Header />
     <section>
       <div class="info">
         <img />
@@ -23,25 +23,30 @@
         </div>
         <button>프로필 편집</button>
       </div>
-      <bookmark />
+      <Bookmark />
     </section>
+    <Footer />
   </div>
 </template>
 
 <script>
-import bookmark from "@/components/myInfo/bookmark";
+import Header from "@/components/header";
+import Footer from "@/components/footer";
+import Bookmark from "@/components/myInfo/bookmark";
 
 export default {
   name: "myInfo",
   components: {
-    bookmark
+    Header,
+    Footer,
+    Bookmark
   }
 };
 </script>
 
 <style scoped lang="scss">
 .info-container {
-  width: 100%;
+  width: 100vw;
 
   //나중에 지우기
   header {
@@ -51,7 +56,7 @@ export default {
 
   section {
     width: 1082px;
-    margin: 36px auto 0;
+    margin: 36px auto 100px;
     display: flex;
 
     .info {
