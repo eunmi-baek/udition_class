@@ -49,7 +49,7 @@ export default {
       }
     }
     .card-wrapper {
-      margin-top: 51px;
+      margin-top: 52px;
     }
   }
 }
