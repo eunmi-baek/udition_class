@@ -1,5 +1,6 @@
 <template>
   <div class="myProfile-wrapper">
+    <Header />
     <div class="myProfile-container">
       <div class="title">북마크한 프로필</div>
       <div class="card-wrapper">
@@ -11,11 +12,13 @@
 
 <script>
 import bookmarkCard from "@/components/bookmarkCard";
+import Header from "@/components/Header";
 
 export default {
   name: "myProfile",
   components: {
-    bookmarkCard
+    bookmarkCard,
+    Header
   }
 };
 </script>
@@ -24,7 +27,7 @@ export default {
 .myProfile-wrapper {
   .myProfile-container {
     width: 1080px;
-    margin: 0 auto;
+    margin: 60px auto 0;
     .title {
       width: 201px;
       height: 45px;
