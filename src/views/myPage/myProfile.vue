@@ -4,20 +4,20 @@
     <div class="myProfile-container">
       <div class="title">북마크한 프로필</div>
       <div class="card-wrapper">
-        <bookmarkCard />
+        <BookmarkCard />
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import bookmarkCard from "@/components/bookmarkCard";
+import BookmarkCard from "@/components/BookmarkCard";
 import Header from "@/components/header";
 
 export default {
   name: "myProfile",
   components: {
-    bookmarkCard,
+    BookmarkCard,
     Header
   }
 };
