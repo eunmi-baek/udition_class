@@ -8,6 +8,8 @@ import meetUp from "@/views/class/meetUp"
 import myInfo from "@/views/myInfo/myInfo"
 import myProfile from "@/views/myPage/myProfile"
 import tutor from "@/views/tutor/tutor"
+import payment from "@/views/payment/payment"
+
 Vue.use(VueRouter);
 
 // route 설정하기
@@ -30,8 +32,8 @@ export default new VueRouter({
             component: spec 
         },
         {
-            path:'/payment',
-            name: 'payment',
+            path:'/paymentfinish',
+            name: 'paymentfinish',
             component:paymentFinish
         },
         {
@@ -53,6 +55,11 @@ export default new VueRouter({
             path:'/tutor',
             name: 'tutor',
             component: tutor
+        },
+        {
+            path:'/payment',
+            name: 'payment',
+            component: payment
         }
     ]
 })

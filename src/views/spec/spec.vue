@@ -4,28 +4,27 @@
       <div class="main-img">
         <img src="@/assets/images/spec/spec-img.jpg" alt />
       </div>
-      <div class="attend-bar">
-        <ul class="category">
-          <li>영화</li>
-          <li>밋업</li>
+      <div class="attend-bar" v-for="(card, i) in cards" :key="i">
+        <ul class="category" v-for="category in cards[0].categories" :key="category">
+          <li>{{ category.list }}</li>
         </ul>
-        <h2 class="title">내 연애를 바꾼 노래들 : 음악과 어쩌고 저쩌고</h2>
-        <p class="by">by 작곡가 박기상</p>
-        <p class="price">월 50,000원</p>
+        <h2 class="title">{{card.title}}</h2>
+        <p class="lecturer">by {{card.lecturer}}</p>
+        <p class="price">월 {{ card.price.toLocaleString() }}원</p>
         <div class="first-class">
           <div class="first-class-date">
             <h4>첫수업</h4>
-            <p>4월 19일 일요일</p>
+            <p>{{ card.date }}</p>
           </div>
           <p class="first-class-detail">이후 클래스는 클래스 멤버들과 조율 후 진행됩니다.</p>
         </div>
         <div class="deadline">
-          <h4 class="deadline-title">마감임박</h4>
-          <p>조기 마감될 수 있는 클래스입니다. 신청을 서둘러주세요! 같은 말 들어가는 칸</p>
+          <h4 class="deadline-title">{{ card.deadline[0].title }}</h4>
+          <p>{{ card.deadline[0].cnt }}</p>
         </div>
         <div class="button">
           <button class="submit">클래스 참가하기</button>
-          <div class="bookmark" @click="handle_toggle" :class="{ like: bookMark == true}"></div>
+          <div class="bookmark" @click="handleToggle" :class="{ like: bookMark == true}"></div>
         </div>
       </div>
       <div class="detail">
@@ -47,12 +46,36 @@ export default {
   data() {
     return {
       detailType: 0,
-      bookMark: false
+      bookMark: false,
+      cards: [
+        {
+          id: 1,
+          categories: [
+            {
+              list: "영화"
+            },
+            {
+              list: "밋업"
+            }
+          ],
+          title: "내 연애를 바꾼 노래들 : 음악과 어쩌고 저쩌고를 해보다",
+          lecturer: "작곡가 남기상",
+          price: 50000,
+          date: "4월 19일 일요일",
+          deadline: [
+            {
+              title: "마감임박",
+              cnt:
+                "조기 마감될 수 있는 클래스입니다. 신청을 서둘러주세요! 같은 말 들어가는 칸"
+            }
+          ]
+        }
+      ]
     };
   },
   methods: {
     // 이미지 토글버튼
-    handle_toggle() {
+    handleToggle() {
       if (this.bookMark == true) {
         this.bookMark = false;
       } else {
@@ -85,10 +108,11 @@ export default {
       border: solid 1px #e2e3ed;
 
       .category {
+        width: 100%;
         li {
+          float: left;
           margin-right: 6px;
           padding: 0 7px;
-          display: inline-block;
           background-color: #121212;
           line-height: 24px;
           color: #fff;
@@ -98,13 +122,14 @@ export default {
       }
 
       .title {
+        float: left;
         margin-top: 15px;
         font-size: 24px;
         font-weight: 900;
         line-height: 1.42;
       }
 
-      .by {
+      .lecturer {
         margin-top: 10px;
         font-size: 14px;
         color: #767983;
