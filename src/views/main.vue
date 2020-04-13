@@ -85,7 +85,7 @@ export default {
   section {
     .top-banner {
       height: 513px;
-      background: url("https://lh3.googleusercontent.com/proxy/7Ubrg9nLWPe75ds9BCKuei6bicQQJbc7qX5RDFrxrhyMIFMXpC8AsKZVO6Y-i8yRe4nSPasGhWIKMIKu44BbJphuLof3ULi6mXcFtTa9lp-FnA")
+      background: url("https://lh3.googleusercontent.com/proxy/nS_0P3MXh_Vtfo_hUeOQpouTaY5izhSSlozLYtmmdrsOT0FBpJ5Lqd9De7B83_eMfhV8r4a6KS7gqCFwko4bEFMsxdH9lL7Qx4bVNJg1fhRopw")
         no-repeat center center;
       background-size: cover;
     }
@@ -149,7 +149,6 @@ export default {
 
             &:hover {
               button {
-                display: block;
                 width: 253px;
                 height: 56px;
                 font-size: 16px;
@@ -181,7 +180,7 @@ export default {
 
     .bottom-banner {
       height: 564px;
-      background: url("https://lh3.googleusercontent.com/proxy/7Ubrg9nLWPe75ds9BCKuei6bicQQJbc7qX5RDFrxrhyMIFMXpC8AsKZVO6Y-i8yRe4nSPasGhWIKMIKu44BbJphuLof3ULi6mXcFtTa9lp-FnA")
+      background: url("https://lh3.googleusercontent.com/proxy/nS_0P3MXh_Vtfo_hUeOQpouTaY5izhSSlozLYtmmdrsOT0FBpJ5Lqd9De7B83_eMfhV8r4a6KS7gqCFwko4bEFMsxdH9lL7Qx4bVNJg1fhRopw")
         no-repeat center center;
       background-size: cover;
       display: flex;
