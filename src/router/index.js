@@ -8,6 +8,9 @@ import meetUp from "@/views/class/meetUp"
 import myInfo from "@/views/myInfo/myInfo"
 import myProfile from "@/views/myPage/myProfile"
 import tutor from "@/views/tutor/tutor"
+import navBar from "@/components/navBar"
+import footer from "@/components/footer"
+import join from "@/views/join/join"
 import payment from "@/views/payment/payment"
 
 Vue.use(VueRouter);
@@ -57,6 +60,21 @@ export default new VueRouter({
             component: tutor
         },
         {
+
+            path:'/navBar',
+            name: 'navBar',
+            component: navBar
+        },
+        {
+            path:'/footer',
+            name: 'footer',
+            component: footer
+        },
+        {
+            path:'/join',
+            name: 'join',
+            component: join
+
             path:'/payment',
             name: 'payment',
             component: payment
