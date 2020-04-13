@@ -1,10 +1,12 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import main from "@/views/main"
-import spec from "@/views/spec/spec"
 import Login from "@/views/login/Login"
+import spec from "@/views/spec/spec"
 import paymentFinish from "@/views/paymentFinish/paymentFinish"
 import meetUp from "@/views/class/meetUp"
+import myInfo from "@/views/myInfo/myInfo"
+import myProfile from "@/views/myPage/myProfile"
 import tutor from "@/views/tutor/tutor"
 import payment from "@/views/payment/payment"
 
@@ -19,15 +21,15 @@ export default new VueRouter({
             name: 'main',
             component: main  
         },
-        {
-            path: '/spec',
-            name: 'spec',
-            component: spec 
-        },
         { 
             path:'/login',
             name: 'Login',
             component:Login
+        },
+        {
+            path: '/spec',
+            name: 'spec',
+            component: spec 
         },
         {
             path:'/paymentfinish',
@@ -38,6 +40,16 @@ export default new VueRouter({
             path:'/meetup',
             name: 'meetup',
             component:meetUp
+        },
+        { 
+            path:'/info',
+            name: 'info',
+            component:myInfo
+        },
+        {
+            path:'/myprofile',
+            name: 'myprofile',
+            component:myProfile
         },
         {
             path:'/tutor',

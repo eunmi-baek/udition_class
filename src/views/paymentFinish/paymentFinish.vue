@@ -10,16 +10,16 @@
       <div class="body-wrapper">
         <div class="img-bg">
           <img class="img" />
-          <!-- <div class="mask" /> -->
           <div class="circle">
             <div class="circle-text">CLASS</div>
           </div>
-          <div class="body-info-wrapper">
-            <div class="body-title">내 연애를 바꾼 노래들: 음악과 어쩌고 저쩌고를 해보다</div>
-            <div class="lecturer">by 작곡가 정성혜</div>
-            <div class="first-day">첫 수업</div>
-            <div class="class-date">4월 19일 일요일</div>
+        </div>
+        <div class="body-info-wrapper">
+          <div class="body-title">
+            내 연애를 바꾼 노래들: 음악과 어쩌고 저쩌고를 해보다
           </div>
+          <div class="lecturer">by 작곡가 정성혜</div>
+          <div class="first-day"><span>첫 수업</span>4월 19일 일요일</div>
         </div>
       </div>
       <div class="info-wrapper">
@@ -38,8 +38,8 @@
         <div class="border-bottom" />
       </div>
       <div class="button-wrapper">
-        <button class="left-btn">돌아가기</button>
-        <button class="right-btn">마이페이지</button>
+        <button class="btn left">돌아가기</button>
+        <button class="btn right">마이페이지</button>
       </div>
     </div>
   </div>
@@ -68,39 +68,31 @@ export default {};
       }
     }
     .body-wrapper {
+      width: 560px;
+      height: 160px;
+      border-radius: 12px;
+      background-color: #121212;
+      margin-top: 52px;
+      display: flex;
+      z-index: 0;
+      overflow: hidden;
       .img-bg {
         position: relative;
-        width: 560px;
+        width: 222px;
         height: 160px;
-        border-radius: 12px;
-        background-color: #121212;
-        margin-top: 52px;
-        z-index: 0;
         .img {
-          position: absolute;
+          width: 100%;
+          height: 100%;
           background-color: green;
-          border-radius: 12px 0 0 12px;
-          width: 222px;
-          height: 160px;
-          left: 0;
-          z-index: 1;
         }
-        // .mask {
-        //   position: absolute;
-        //   width: 222px;
-        //   height: 160px;
-        //   border-radius: 12px 0 0 12px;
-        //   //   background-color: #d8d8d8;
-        //   left: 0;
-        //   z-index: 2;
-        // }
         .circle {
           position: absolute;
           width: 52px;
           height: 52px;
+          top: 15px;
+          left: 15px;
           background-color: #0577ff;
-          margin: 14px 0 0 14px;
-          border-radius: 75px;
+          border-radius: 50%;
           z-index: 3;
           .circle-text {
             width: 48px;
@@ -114,44 +106,29 @@ export default {};
             margin: 21px 2px 18px;
           }
         }
-        .body-info-wrapper {
-          color: #ffffff;
-          position: relative;
-
-          .body-title {
-            position: absolute;
-            margin: 21px 90px 58px 245px;
-            width: 225px;
-            font-family: NotoSansCJKkr;
-            font-size: 18px;
-            font-weight: 900;
-          }
-          .lecturer {
-            position: absolute;
-            width: 101px;
-            font-family: SpoqaHanSans;
-            font-size: 12px;
-            line-height: 1.67;
-            letter-spacing: normal;
-            margin: 75px 124px 0 245px;
-          }
-          .first-day {
-            position: absolute;
-            width: 43px;
-            height: 20px;
-            font-family: SpoqaHanSans;
-            font-size: 12px;
+      }
+      .body-info-wrapper {
+        position: relative;
+        color: #ffffff;
+        width: 338px;
+        padding: 22px 30px 22px 22px;
+        font-size: 12px;
+        .body-title {
+          font-family: NotoSansCJKkr;
+          font-size: 18px;
+          font-weight: 900;
+          line-height: 1.35;
+          padding-right: 80px;
+        }
+        .lecturer {
+          margin-top: 10px;
+        }
+        .first-day {
+          position: absolute;
+          bottom: 20px;
+          span {
             font-weight: bold;
-            line-height: 1.67;
-            margin: 119px 272px 21px 245px;
-          }
-          .class-date {
-            width: 97px;
-            height: 20px;
-            font-family: SpoqaHanSans;
-            font-size: 12px;
-            line-height: 1.67;
-            margin: 119px 170px 21px 293px;
+            margin-right: 10px;
           }
         }
       }
@@ -170,18 +147,13 @@ export default {};
         color: #000000;
         margin-top: 32px;
         .payment-method {
-          width: 59px;
-          height: 24px;
           font-family: NotoSansCJKkr;
           font-weight: 900;
         }
         .payment-info {
-          width: 230px;
-          height: 46px;
           font-family: SpoqaHanSans;
           line-height: 1.44;
           text-align: right;
-          float: right;
         }
       }
     }
@@ -192,15 +164,11 @@ export default {};
       margin-top: 17px;
 
       .final-expense {
-        width: 92px;
-        height: 24px;
         font-family: NotoSansCJKkr;
         font-size: 16px;
         font-weight: 900;
       }
       .expense {
-        width: 92px;
-        height: 26px;
         font-family: SpoqaHanSans;
         font-size: 22px;
         font-weight: bold;
@@ -216,11 +184,11 @@ export default {};
   }
   .button-wrapper {
     margin-top: 61px;
-    .left-btn {
+    .btn {
       width: 276px;
       height: 56px;
       border-radius: 4px;
-      border: solid 1px #121212;
+      text-align: center;
       font-weight: 900;
       color: #000000;
       font-weight: 900;
@@ -228,18 +196,13 @@ export default {};
       font-size: 16px;
       cursor: pointer;
     }
-    .right-btn {
-      width: 276px;
-      height: 56px;
-      border-radius: 4px;
-      background-color: #000000;
-      text-align: center;
+    .left {
+      border: solid 1px #121212;
+    }
+    .right {
       color: #ffffff;
-      font-weight: 900;
-      font-family: NotoSansCJKkr;
-      font-size: 16px;
-      cursor: pointer;
       margin-left: 8px;
+      background-color: #000000;
     }
   }
 }
