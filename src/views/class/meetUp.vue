@@ -15,9 +15,9 @@
   </div>
 </template>
 <script>
-import Card from "@/components/card";
-import Header from "@/components/header";
-import Footer from "@/components/footer";
+import Card from "@/components/Card";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 export default {
   name: "meetUp",

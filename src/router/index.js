@@ -1,15 +1,14 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import main from "@/views/main"
+import Main from "@/views/Main"
 import Login from "@/views/login/Login"
 import spec from "@/views/spec/spec"
+import Bookmark from "@/views/Bookmark/Bookmark"
+import InfoEdit from "@/views/InfoEdit/InfoEdit"
 import PaymentFinish from "@/views/PaymentFinish/PaymentFinish"
 import MeetUp from "@/views/Class/MeetUp"
-import myInfo from "@/views/myInfo/myInfo"
 import MyProfile from "@/views/MyPage/MyProfile"
 import tutor from "@/views/tutor/tutor"
-import header from "@/components/header"
-import footer from "@/components/footer"
 import join from "@/views/join/join"
 import payment from "@/views/payment/payment"
 
@@ -22,7 +21,7 @@ export default new VueRouter({
         {
             path: '/',
             name: 'main',
-            component: main  
+            component: Main  
         },
         { 
             path:'/login',
@@ -45,9 +44,14 @@ export default new VueRouter({
             component:MeetUp
         },
         { 
+            path:'/bookmark',
+            name: 'bookmark',
+            component:Bookmark
+        },
+        { 
             path:'/info',
             name: 'info',
-            component:myInfo
+            component:InfoEdit
         },
         {
             path:'/myprofile',
@@ -60,20 +64,11 @@ export default new VueRouter({
             component: tutor
         },
         {
-
-            path:'/header',
-            name: 'header',
-            component: header
-        },
-        {
-            path:'/footer',
-            name: 'footer',
-            component: footer
-        },
-        {
             path:'/join',
             name: 'join',
-            component: join},{
+            component: join
+        },
+        {
 
             path:'/payment',
             name: 'payment',
