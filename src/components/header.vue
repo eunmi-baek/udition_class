@@ -23,19 +23,19 @@ export default {
       categories: [
         {
           id: 1,
-          name: "유디션"
+          name: "유디션",
         },
         {
           id: 2,
-          name: "클래스"
+          name: "클래스",
         },
         {
           id: 3,
-          name: "선생님"
-        }
-      ]
+          name: "선생님",
+        },
+      ],
     };
-  }
+  },
 };
 </script>
 

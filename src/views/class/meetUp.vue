@@ -16,16 +16,16 @@
 </template>
 <script>
 import Card from "@/components/card";
-import Header from "@/components/header";
-import Footer from "@/components/footer";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 export default {
   name: "meetUp",
   components: {
     Card,
     Header,
-    Footer
-  }
+    Footer,
+  },
 };
 </script>
 <style scoped lang="scss">

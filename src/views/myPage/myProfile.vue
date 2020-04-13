@@ -12,14 +12,14 @@
 
 <script>
 import bookmarkCard from "@/components/bookmarkCard";
-import Header from "@/components/header";
+import Header from "@/components/Header";
 
 export default {
   name: "myProfile",
   components: {
     bookmarkCard,
-    Header
-  }
+    Header,
+  },
 };
 </script>
 

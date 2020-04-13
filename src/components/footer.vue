@@ -65,27 +65,27 @@ export default {
       categories: [
         {
           id: 1,
-          name: "공지사항"
+          name: "공지사항",
         },
         {
           id: 2,
-          name: "서비스 이용약관"
+          name: "서비스 이용약관",
         },
         {
           id: 3,
-          name: "유디션 소개"
+          name: "유디션 소개",
         },
         {
           id: 4,
-          name: "개인정보 보호정책"
+          name: "개인정보 보호정책",
         },
         {
           id: 5,
-          name: "기업회원 이용 가이드"
-        }
-      ]
+          name: "기업회원 이용 가이드",
+        },
+      ],
     };
-  }
+  },
 };
 </script>
 

@@ -8,9 +8,7 @@ import meetUp from "@/views/class/meetUp"
 import myInfo from "@/views/myInfo/myInfo"
 import myProfile from "@/views/myPage/myProfile"
 import tutor from "@/views/tutor/tutor"
-import header from "@/components/header"
-import footer from "@/components/footer"
-import join from "@/views/join/join"
+import Join from "@/views/join/Join"
 import payment from "@/views/payment/payment"
 
 Vue.use(VueRouter);
@@ -59,22 +57,13 @@ export default new VueRouter({
             name: 'tutor',
             component: tutor
         },
+        
         {
-
-            path:'/header',
-            name: 'header',
-            component: header
-        },
-        {
-            path:'/footer',
-            name: 'footer',
-            component: footer
-        },
-        {
-            path:'/join',
-            name: 'join',
-            component: join},{
-
+            path:'/Join',
+            name: 'Join',
+            component: Join}
+            ,
+            {
             path:'/payment',
             name: 'payment',
             component: payment

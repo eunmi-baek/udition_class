@@ -62,13 +62,13 @@
 </template>
 
 <script>
-import Header from "@/components/header";
-import Footer from "@/components/footer";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 export default {
   components: {
     Header,
-    Footer
+    Footer,
   },
   data() {
     return {
@@ -79,11 +79,11 @@ export default {
           id: 1,
           categories: [
             {
-              list: "영화"
+              list: "영화",
             },
             {
-              list: "밋업"
-            }
+              list: "밋업",
+            },
           ],
           title: "내 연애를 바꾼 노래들 : 음악과 어쩌고 저쩌고를 해보다",
           lecturer: "작곡가 남기상",
@@ -93,11 +93,11 @@ export default {
             {
               title: "마감임박",
               cnt:
-                "조기 마감될 수 있는 클래스입니다. 신청을 서둘러주세요! 같은 말 들어가는 칸"
-            }
-          ]
-        }
-      ]
+                "조기 마감될 수 있는 클래스입니다. 신청을 서둘러주세요! 같은 말 들어가는 칸",
+            },
+          ],
+        },
+      ],
     };
   },
   methods: {
@@ -108,8 +108,8 @@ export default {
       } else {
         this.bookMark = true;
       }
-    }
-  }
+    },
+  },
 };
 </script>
 
