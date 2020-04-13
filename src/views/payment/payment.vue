@@ -1,5 +1,6 @@
 <template>
   <div class="container">
+    <Header />
     <section>
       <div class="apply">
         <h2>클래스 신청</h2>
@@ -9,11 +10,11 @@
             <div class="circle">CLASS</div>
           </div>
           <div class="class-box-cnt" v-for="(card, i) in cards" :key="i">
-            <p class="title">{{card.title}}</p>
-            <p class="lecturer">{{card.lecturer}}</p>
+            <p class="title">{{ card.title }}</p>
+            <p class="lecturer">{{ card.lecturer }}</p>
             <p class="first-class">
               <strong>첫 수업</strong>
-              {{card.date}}
+              {{ card.date }}
             </p>
           </div>
         </div>
@@ -43,35 +44,51 @@
         </ul>
         <div class="final-price">
           <span>최종 금액</span>
-          <strong>{{ (price.originPrice + price.discountPrice).toLocaleString() }}원</strong>
+          <strong
+            >{{
+              (price.originPrice + price.discountPrice).toLocaleString()
+            }}원</strong
+          >
         </div>
       </div>
       <div class="payment-way">
         <h2>결제 수단</h2>
-        <div class="payment-card" @click="handleCard" :class="{ activeCard : paymentCard == true}">
+        <div
+          class="payment-card"
+          @click="handleCard"
+          :class="{ activeCard: paymentCard == true }"
+        >
           카드 결제
           <span></span>
         </div>
         <div
           class="payment-passbook"
           @click="handlePassbook"
-          :class="{ activePassbook : paymentPassbook == true}"
+          :class="{ activePassbook: paymentPassbook == true }"
         >
           무통장 입금
           <span></span>
         </div>
       </div>
       <div class="checkbox">
-        <span @click="handleCheckbox" :class="{ chk: checkBox == true}"></span>
+        <span @click="handleCheckbox" :class="{ chk: checkBox == true }"></span>
         주문 내용 확인하였으며, 구매에 동의합니다.
       </div>
       <button class="payment-submit">클래스 결제하기</button>
     </section>
+    <Footer />
   </div>
 </template>
 
 <script>
+import Header from "@/components/header";
+import Footer from "@/components/footer";
+
 export default {
+  components: {
+    Header,
+    Footer
+  },
   data() {
     return {
       paymentCard: true,
