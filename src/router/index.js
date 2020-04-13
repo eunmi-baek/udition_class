@@ -9,6 +9,7 @@ import myProfile from "@/views/myPage/myProfile"
 import tutor from "@/views/tutor/tutor"
 import navBar from "@/components/navBar"
 import footer from "@/components/footer"
+import join from "@/views/join/join"
 Vue.use(VueRouter);
 
 // route 설정하기
@@ -59,6 +60,11 @@ export default new VueRouter({
             path:'/footer',
             name: 'footer',
             component: footer
+        },
+        {
+            path:'/join',
+            name: 'join',
+            component: join
         }
     ]
 })
