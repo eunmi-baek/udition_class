@@ -1,5 +1,6 @@
 <template>
   <div class="MeetUp-wrapper">
+    <Header />
     <div class="MeetUp-container">
       <div class="category-wrapper">
         <div class="category">CLASS</div>
@@ -7,18 +8,23 @@
         <div class="category mgn-left">ONE DAY</div>
       </div>
       <div class="card-wrapper">
-        <card />
+        <Card />
       </div>
     </div>
+    <Footer />
   </div>
 </template>
 <script>
-import card from "@/components/card";
+import Card from "@/components/card";
+import Header from "@/components/header";
+import Footer from "@/components/footer";
 
 export default {
   name: "meetUp",
   components: {
-    card
+    Card,
+    Header,
+    Footer
   }
 };
 </script>
@@ -27,7 +33,7 @@ export default {
   width: 100%;
   .MeetUp-container {
     width: 1080px;
-    margin: 0 auto;
+    margin: 90px auto 100px;
     .category-wrapper {
       width: 571px;
       display: flex;
@@ -49,7 +55,7 @@ export default {
       }
     }
     .card-wrapper {
-      margin-top: 51px;
+      margin-top: 52px;
     }
   }
 }
