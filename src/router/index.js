@@ -1,14 +1,13 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import main from "@/views/main"
-import spec from "@/views/spec/spec"
 import Login from "@/views/login/Login"
+import spec from "@/views/spec/spec"
 import paymentFinish from "@/views/paymentFinish/paymentFinish"
 import meetUp from "@/views/class/meetUp"
+import myInfo from "@/views/myInfo/myInfo"
 import myProfile from "@/views/myPage/myProfile"
 import tutor from "@/views/tutor/tutor"
-import navBar from "@/components/navBar"
-import footer from "@/components/footer"
 Vue.use(VueRouter);
 
 // route 설정하기
@@ -20,15 +19,15 @@ export default new VueRouter({
             name: 'main',
             component: main  
         },
-        {
-            path: '/spec',
-            name: 'spec',
-            component: spec 
-        },
         { 
             path:'/login',
             name: 'Login',
             component:Login
+        },
+        {
+            path: '/spec',
+            name: 'spec',
+            component: spec 
         },
         {
             path:'/payment',
@@ -40,6 +39,11 @@ export default new VueRouter({
             name: 'meetup',
             component:meetUp
         },
+        { 
+            path:'/info',
+            name: 'info',
+            component:myInfo
+        },
         {
             path:'/myprofile',
             name: 'myprofile',
@@ -49,16 +53,6 @@ export default new VueRouter({
             path:'/tutor',
             name: 'tutor',
             component: tutor
-        },
-        {
-            path:'/navBar',
-            name: 'navBar',
-            component: navBar
-        },
-        {
-            path:'/footer',
-            name: 'footer',
-            component: footer
         }
     ]
 })

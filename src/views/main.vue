@@ -1,45 +1,50 @@
 <template>
   <div class="main-container">
-    <header></header>
+    <Header />
     <section>
       <div class="top-banner"></div>
       <div class="container">
         <div class="category-container">
           <div class="category" v-for="(category, i) in categories" :key="i">
-            <div class="title">{{category.name}}</div>
+            <div class="title">{{ category.name }}</div>
             <div class="line"></div>
             <div class="card-container">
               <img :src="category.image" />
-              <div class="content">{{category.content}}</div>
+              <div class="content">{{ category.content }}</div>
               <button>클래스 둘러보기</button>
             </div>
           </div>
         </div>
         <div class="class">
           <h2>진행중인 다양한 클래스를 만나보세요! ></h2>
-          <card />
+          <Card />
         </div>
       </div>
       <div class="bottom-banner">
         <div>
           유디션은 이러이러하구요, 이러이러합니다.
-          <br />따라서 100000000명이 쓰고요, ~~~~~~합니다.
-          <br />많은 사람들이 썼으면 좋겠어요.
+          <br />따라서 100000000명이 쓰고요, ~~~~~~합니다. <br />많은 사람들이
+          썼으면 좋겠어요.
         </div>
         <div class="strong">더 알아보고 싶습니까?</div>
         <button>클래스 둘러보기</button>
       </div>
     </section>
+    <Footer />
   </div>
 </template>
 
 <script>
-import card from "@/components/card";
+import Header from "@/components/header";
+import Footer from "@/components/footer";
+import Card from "@/components/card";
 
 export default {
   name: "main",
   components: {
-    card
+    Header,
+    Footer,
+    Card
   },
   data() {
     return {
@@ -85,7 +90,7 @@ export default {
   section {
     .top-banner {
       height: 513px;
-      background: url("https://lh3.googleusercontent.com/proxy/7Ubrg9nLWPe75ds9BCKuei6bicQQJbc7qX5RDFrxrhyMIFMXpC8AsKZVO6Y-i8yRe4nSPasGhWIKMIKu44BbJphuLof3ULi6mXcFtTa9lp-FnA")
+      background: url("https://lh3.googleusercontent.com/proxy/nS_0P3MXh_Vtfo_hUeOQpouTaY5izhSSlozLYtmmdrsOT0FBpJ5Lqd9De7B83_eMfhV8r4a6KS7gqCFwko4bEFMsxdH9lL7Qx4bVNJg1fhRopw")
         no-repeat center center;
       background-size: cover;
     }
@@ -149,7 +154,6 @@ export default {
 
             &:hover {
               button {
-                display: block;
                 width: 253px;
                 height: 56px;
                 font-size: 16px;
@@ -181,7 +185,7 @@ export default {
 
     .bottom-banner {
       height: 564px;
-      background: url("https://lh3.googleusercontent.com/proxy/7Ubrg9nLWPe75ds9BCKuei6bicQQJbc7qX5RDFrxrhyMIFMXpC8AsKZVO6Y-i8yRe4nSPasGhWIKMIKu44BbJphuLof3ULi6mXcFtTa9lp-FnA")
+      background: url("https://lh3.googleusercontent.com/proxy/nS_0P3MXh_Vtfo_hUeOQpouTaY5izhSSlozLYtmmdrsOT0FBpJ5Lqd9De7B83_eMfhV8r4a6KS7gqCFwko4bEFMsxdH9lL7Qx4bVNJg1fhRopw")
         no-repeat center center;
       background-size: cover;
       display: flex;
