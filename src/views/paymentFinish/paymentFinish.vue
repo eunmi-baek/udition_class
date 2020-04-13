@@ -146,7 +146,6 @@ export default {};
             margin: 119px 272px 21px 245px;
           }
           .class-date {
-            position: absolute;
             width: 97px;
             height: 20px;
             font-family: SpoqaHanSans;

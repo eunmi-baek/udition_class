@@ -6,6 +6,7 @@ import Login from "@/views/login/Login"
 import paymentFinish from "@/views/paymentFinish/paymentFinish"
 import meetUp from "@/views/class/meetUp"
 import tutor from "@/views/tutor/tutor"
+import payment from "@/views/payment/payment"
 
 Vue.use(VueRouter);
 
@@ -29,8 +30,8 @@ export default new VueRouter({
             component:Login
         },
         {
-            path:'/payment',
-            name: 'payment',
+            path:'/paymentfinish',
+            name: 'paymentfinish',
             component:paymentFinish
         },
         {
@@ -42,6 +43,11 @@ export default new VueRouter({
             path:'/tutor',
             name: 'tutor',
             component: tutor
+        },
+        {
+            path:'/payment',
+            name: 'payment',
+            component: payment
         }
     ]
 })
