@@ -1,11 +1,12 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import main from "@/views/main"
+import Main from "@/views/Main"
 import Login from "@/views/login/Login"
 import spec from "@/views/spec/spec"
 import paymentFinish from "@/views/paymentFinish/paymentFinish"
 import meetUp from "@/views/class/meetUp"
-import myInfo from "@/views/myInfo/myInfo"
+import Bookmark from "@/views/Bookmark/Bookmark"
+import InfoEdit from "@/views/InfoEdit/InfoEdit"
 import myProfile from "@/views/myPage/myProfile"
 import tutor from "@/views/tutor/tutor"
 Vue.use(VueRouter);
@@ -17,7 +18,7 @@ export default new VueRouter({
         {
             path: '/',
             name: 'main',
-            component: main  
+            component: Main  
         },
         { 
             path:'/login',
@@ -40,9 +41,14 @@ export default new VueRouter({
             component:meetUp
         },
         { 
+            path:'/bookmark',
+            name: 'bookmark',
+            component:Bookmark
+        },
+        { 
             path:'/info',
             name: 'info',
-            component:myInfo
+            component:InfoEdit
         },
         {
             path:'/myprofile',

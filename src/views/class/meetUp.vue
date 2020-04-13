@@ -7,18 +7,18 @@
         <div class="category mgn-left">ONE DAY</div>
       </div>
       <div class="card-wrapper">
-        <card />
+        <Card />
       </div>
     </div>
   </div>
 </template>
 <script>
-import card from "@/components/card";
+import Card from "@/components/Card";
 
 export default {
   name: "meetUp",
   components: {
-    card
+    Card
   }
 };
 </script>

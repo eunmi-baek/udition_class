@@ -35,9 +35,9 @@
 </template>
 
 <script>
-import Header from "@/components/header";
-import Footer from "@/components/footer";
-import Card from "@/components/card";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import Card from "@/components/Card";
 
 export default {
   name: "main",
