@@ -3,11 +3,11 @@ import VueRouter from "vue-router";
 import Main from "@/views/Main"
 import Login from "@/views/login/Login"
 import spec from "@/views/spec/spec"
-import paymentFinish from "@/views/paymentFinish/paymentFinish"
-import meetUp from "@/views/class/meetUp"
 import Bookmark from "@/views/Bookmark/Bookmark"
 import InfoEdit from "@/views/InfoEdit/InfoEdit"
-import myProfile from "@/views/myPage/myProfile"
+import PaymentFinish from "@/views/PaymentFinish/PaymentFinish"
+import MeetUp from "@/views/Class/MeetUp"
+import MyProfile from "@/views/MyPage/MyProfile"
 import tutor from "@/views/tutor/tutor"
 import join from "@/views/join/join"
 import payment from "@/views/payment/payment"
@@ -36,12 +36,12 @@ export default new VueRouter({
         {
             path:'/paymentfinish',
             name: 'paymentfinish',
-            component:paymentFinish
+            component:PaymentFinish
         },
         {
             path:'/meetup',
             name: 'meetup',
-            component:meetUp
+            component:MeetUp
         },
         { 
             path:'/bookmark',
@@ -56,7 +56,7 @@ export default new VueRouter({
         {
             path:'/myprofile',
             name: 'myprofile',
-            component:myProfile
+            component: MyProfile
         },
         {
             path:'/tutor',
