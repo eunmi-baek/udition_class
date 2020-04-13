@@ -1,15 +1,18 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import main from "@/views/main"
-import spec from "@/views/spec/spec"
 import Login from "@/views/login/Login"
+import spec from "@/views/spec/spec"
 import paymentFinish from "@/views/paymentFinish/paymentFinish"
 import meetUp from "@/views/class/meetUp"
+import myInfo from "@/views/myInfo/myInfo"
 import myProfile from "@/views/myPage/myProfile"
 import tutor from "@/views/tutor/tutor"
 import navBar from "@/components/navBar"
 import footer from "@/components/footer"
 import join from "@/views/join/join"
+import payment from "@/views/payment/payment"
+
 Vue.use(VueRouter);
 
 // route 설정하기
@@ -21,25 +24,30 @@ export default new VueRouter({
             name: 'main',
             component: main  
         },
-        {
-            path: '/spec',
-            name: 'spec',
-            component: spec 
-        },
         { 
             path:'/login',
             name: 'Login',
             component:Login
         },
         {
-            path:'/payment',
-            name: 'payment',
+            path: '/spec',
+            name: 'spec',
+            component: spec 
+        },
+        {
+            path:'/paymentfinish',
+            name: 'paymentfinish',
             component:paymentFinish
         },
         {
             path:'/meetup',
             name: 'meetup',
             component:meetUp
+        },
+        { 
+            path:'/info',
+            name: 'info',
+            component:myInfo
         },
         {
             path:'/myprofile',
@@ -52,6 +60,7 @@ export default new VueRouter({
             component: tutor
         },
         {
+
             path:'/navBar',
             name: 'navBar',
             component: navBar
@@ -65,6 +74,10 @@ export default new VueRouter({
             path:'/join',
             name: 'join',
             component: join
+
+            path:'/payment',
+            name: 'payment',
+            component: payment
         }
     ]
 })

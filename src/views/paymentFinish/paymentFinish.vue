@@ -1,5 +1,6 @@
 <template>
   <div class="payment-finish-wrapper">
+    <Header />
     <div class="pf-container">
       <div class="title-wrapper">
         <div class="title">
@@ -46,14 +47,20 @@
 </template>
 
 <script>
-export default {};
+import Header from "@/components/header";
+
+export default {
+  components: {
+    Header
+  }
+};
 </script>
 
 <style scoped lang="scss">
 .payment-finish-wrapper {
   width: 100%;
   .pf-container {
-    margin: 0 auto;
+    margin: 100px auto 0;
     width: 560px;
     .title-wrapper {
       .title {
@@ -118,7 +125,7 @@ export default {};
           font-size: 18px;
           font-weight: 900;
           line-height: 1.35;
-          padding-right: 80px;
+          padding-right: 81px;
         }
         .lecturer {
           margin-top: 10px;

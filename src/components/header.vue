@@ -1,10 +1,12 @@
 <template>
-  <div class="nav-wrapper">
-    <div class="nav-contaianer">
+  <div class="header-wrapper">
+    <div class="header-contaianer">
       <div class="logo-box"></div>
       <div class="category-box">
         <ul>
-          <li v-for="(category,i) in categories" :key="i">{{category.name}}</li>
+          <li v-for="(category, i) in categories" :key="i">
+            {{ category.name }}
+          </li>
         </ul>
       </div>
       <div class="content-box">
@@ -37,11 +39,11 @@ export default {
 };
 </script>
 
-<style scoped lang="scss" >
-.nav-wrapper {
+<style scoped lang="scss">
+.header-wrapper {
   width: 100vw;
   border-bottom: 1px solid #2d3039;
-  .nav-contaianer {
+  .header-contaianer {
     width: 75vw;
     margin: 0 auto;
     display: flex;
