@@ -30,13 +30,13 @@
 </template>
 
 <script>
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import Header from "@/components/Heyhey";
+import Footer from "@/components/Fufu";
 
 export default {
   components: {
     Header,
-    Footer,
+    Footer
   },
   data() {
     return {
@@ -46,53 +46,53 @@ export default {
           id: 1,
           title: "작곡가",
           name: "남기상",
-          img: "https://i.ytimg.com/vi/zwScyfevCBM/maxresdefault.jpg",
+          img: "https://i.ytimg.com/vi/zwScyfevCBM/maxresdefault.jpg"
         },
         {
           id: 2,
           title: "기타리스트",
           name: "남기상",
-          img: "https://i.ytimg.com/vi/zwScyfevCBM/maxresdefault.jpg",
+          img: "https://i.ytimg.com/vi/zwScyfevCBM/maxresdefault.jpg"
         },
         {
           id: 3,
           title: "작곡가",
           name: "남기상",
-          img: "https://i.ytimg.com/vi/zwScyfevCBM/maxresdefault.jpg",
+          img: "https://i.ytimg.com/vi/zwScyfevCBM/maxresdefault.jpg"
         },
         {
           id: 4,
           title: "작곡가",
           name: "남기상",
-          img: "https://i.ytimg.com/vi/zwScyfevCBM/maxresdefault.jpg",
+          img: "https://i.ytimg.com/vi/zwScyfevCBM/maxresdefault.jpg"
         },
         {
           id: 5,
           title: "작곡가",
           name: "남기상",
-          img: "https://i.ytimg.com/vi/zwScyfevCBM/maxresdefault.jpg",
+          img: "https://i.ytimg.com/vi/zwScyfevCBM/maxresdefault.jpg"
         },
         {
           id: 6,
           title: "작곡가",
           name: "남기상",
-          img: "https://i.ytimg.com/vi/zwScyfevCBM/maxresdefault.jpg",
+          img: "https://i.ytimg.com/vi/zwScyfevCBM/maxresdefault.jpg"
         },
         {
           id: 7,
           title: "작곡가",
           name: "남기상",
-          img: "https://i.ytimg.com/vi/zwScyfevCBM/maxresdefault.jpg",
+          img: "https://i.ytimg.com/vi/zwScyfevCBM/maxresdefault.jpg"
         },
         {
           id: 8,
           title: "작곡가",
           name: "남기상",
-          img: "https://i.ytimg.com/vi/zwScyfevCBM/maxresdefault.jpg",
-        },
-      ],
+          img: "https://i.ytimg.com/vi/zwScyfevCBM/maxresdefault.jpg"
+        }
+      ]
     };
-  },
+  }
 };
 </script>
 

@@ -5,12 +5,12 @@ import Login from "@/views/Login/Login"
 import Spec from "@/views/Spec/Spec"
 import Bookmark from "@/views/Bookmark/Bookmark"
 import InfoEdit from "@/views/InfoEdit/InfoEdit"
-import PaymentFinish from "@/views/PaymentFinish/PaymentFinish"
-import MeetUp from "@/views/Class/MeetUp"
-import MyProfile from "@/views/MyPage/MyProfile"
+import PaymentFinish from "@/views/BillFinish/BillFinish"
+import MeetUp from "@/views/Class/Class"
+import MyProfile from "@/views/Information/Information"
 import Tutor from "@/views/Tutor/Tutor"
-import Join from "@/views/Join/Join"
-import Payment from "@/views/Payment/Payment"
+import Join from "@/views/Zzoin/Zzoin"
+import Payment from "@/views/Bill/Bill"
 
 Vue.use(VueRouter);
 
@@ -70,7 +70,6 @@ export default new VueRouter({
             component: Join
         },
         {
-
             path:'/payment',
             name: 'payment',
             component: Payment

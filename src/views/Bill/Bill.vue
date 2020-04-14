@@ -44,11 +44,9 @@
         </ul>
         <div class="final-price">
           <span>최종 금액</span>
-          <strong
-            >{{
-              (price.originPrice + price.discountPrice).toLocaleString()
-            }}원</strong
-          >
+          <strong>
+            {{ (price.originPrice + price.discountPrice).toLocaleString() }}원
+          </strong>
         </div>
       </div>
       <div class="payment-way">
@@ -81,13 +79,13 @@
 </template>
 
 <script>
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import Header from "@/components/Heyhey";
+import Footer from "@/components/Fufu";
 
 export default {
   components: {
     Header,
-    Footer,
+    Footer
   },
   data() {
     return {
@@ -99,15 +97,15 @@ export default {
           id: 1,
           title: "내 연애를 바꾼 노래들 : 음악과 어쩌고 저쩌고를 해보다",
           lecturer: "by 작곡가 남기상",
-          date: "4월 19일 일요일",
-        },
+          date: "4월 19일 일요일"
+        }
       ],
       payment: [
         {
           originPrice: 70000,
-          discountPrice: -20000,
-        },
-      ],
+          discountPrice: -20000
+        }
+      ]
     };
   },
   methods: {
@@ -134,8 +132,8 @@ export default {
       } else {
         this.checkBox = true;
       }
-    },
-  },
+    }
+  }
 };
 </script>
 

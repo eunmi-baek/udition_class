@@ -26,11 +26,11 @@
 </template>
 
 <script>
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import Header from "@/components/Heyhey";
+import Footer from "@/components/Fufu";
 
 export default {
-  components: { Header, Footer },
+  components: { Header, Footer }
 };
 </script>
 
