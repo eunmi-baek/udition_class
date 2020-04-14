@@ -62,8 +62,8 @@
 </template>
 
 <script>
-import Header from "@/components/Heyhey";
-import Footer from "@/components/Fufu";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 export default {
   components: {
