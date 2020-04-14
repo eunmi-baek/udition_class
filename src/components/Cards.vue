@@ -2,9 +2,9 @@
   <div class="card-container">
     <div class="card" v-for="(card, i) in cards" :key="i">
       <img :src="card.image" alt="cardimage" />
-      <div class="title">{{card.title}}</div>
-      <div class="date">{{card.date}} | {{card.class}}</div>
-      <div class="circle">{{card.category}}</div>
+      <div class="title">{{ card.title }}</div>
+      <div class="date">{{ card.date }} | {{ card.class }}</div>
+      <div class="circle">{{ card.category }}</div>
     </div>
   </div>
 </template>
