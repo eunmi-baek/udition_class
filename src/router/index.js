@@ -1,16 +1,16 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import Main from "@/views/Main"
-import Login from "@/views/login/Login"
-import spec from "@/views/spec/spec"
+import Main from "@/views/Page"
+import Login from "@/views/Login/Login"
+import Spec from "@/views/Spec/Spec"
 import Bookmark from "@/views/Bookmark/Bookmark"
 import InfoEdit from "@/views/InfoEdit/InfoEdit"
 import PaymentFinish from "@/views/PaymentFinish/PaymentFinish"
 import MeetUp from "@/views/Class/MeetUp"
 import MyProfile from "@/views/MyPage/MyProfile"
-import tutor from "@/views/tutor/tutor"
+import Tutor from "@/views/Tutor/Tutor"
 import join from "@/views/join/join"
-import payment from "@/views/payment/payment"
+import Payment from "@/views/Payment/Payment"
 
 Vue.use(VueRouter);
 
@@ -25,13 +25,13 @@ export default new VueRouter({
         },
         { 
             path:'/login',
-            name: 'Login',
+            name: 'login',
             component:Login
         },
         {
             path: '/spec',
             name: 'spec',
-            component: spec 
+            component: Spec 
         },
         {
             path:'/paymentfinish',
@@ -61,7 +61,7 @@ export default new VueRouter({
         {
             path:'/tutor',
             name: 'tutor',
-            component: tutor
+            component: Tutor
         },
         {
             path:'/join',
@@ -72,7 +72,7 @@ export default new VueRouter({
 
             path:'/payment',
             name: 'payment',
-            component: payment
+            component: Payment
         }
     ]
 })
