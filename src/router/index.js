@@ -1,15 +1,16 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import main from "@/views/main"
-import Login from "@/views/login/Login"
-import spec from "@/views/spec/spec"
-import paymentFinish from "@/views/paymentFinish/paymentFinish"
-import meetUp from "@/views/class/meetUp"
-import myInfo from "@/views/myInfo/myInfo"
-import myProfile from "@/views/myPage/myProfile"
-import tutor from "@/views/tutor/tutor"
-import Join from "@/views/join/Join"
-import payment from "@/views/payment/payment"
+import Main from "@/views/Main"
+import Login from "@/views/Login/Login"
+import Spec from "@/views/Spec/Spec"
+import Bookmark from "@/views/Bookmark/Bookmark"
+import InfoEdit from "@/views/InfoEdit/InfoEdit"
+import PaymentFinish from "@/views/PaymentFinish/PaymentFinish"
+import MeetUp from "@/views/Class/MeetUp"
+import MyProfile from "@/views/MyPage/MyProfile"
+import Tutor from "@/views/Tutor/Tutor"
+import Join from "@/views/Join/Join"
+import Payment from "@/views/Payment/Payment"
 
 Vue.use(VueRouter);
 
@@ -20,7 +21,7 @@ export default new VueRouter({
         {
             path: '/',
             name: 'main',
-            component: main  
+            component: Main  
         },
         { 
             path:'/login',
@@ -30,43 +31,49 @@ export default new VueRouter({
         {
             path: '/spec',
             name: 'spec',
-            component: spec 
+            component: Spec 
         },
         {
             path:'/paymentfinish',
             name: 'paymentfinish',
-            component:paymentFinish
+            component:PaymentFinish
         },
         {
             path:'/meetup',
             name: 'meetup',
-            component:meetUp
+            component:MeetUp
+        },
+        { 
+            path:'/bookmark',
+            name: 'bookmark',
+            component:Bookmark
         },
         { 
             path:'/info',
             name: 'info',
-            component:myInfo
+            component:InfoEdit
         },
         {
             path:'/myprofile',
             name: 'myprofile',
-            component:myProfile
+            component: MyProfile
         },
         {
             path:'/tutor',
             name: 'tutor',
-            component: tutor
+            component: Tutor
         },
         
         {
-            path:'/Join',
-            name: 'Join',
-            component: Join}
-            ,
-            {
+            path:'/join',
+            name: 'join',
+            component: Join
+        },
+        {
+
             path:'/payment',
             name: 'payment',
-            component: payment
+            component: Payment
         }
     ]
 })

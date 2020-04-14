@@ -116,8 +116,8 @@ export default {
               height: 28px;
               border: 1px solid #121212;
               border-radius: 50%;
-              background: url("../assets/footer/fill-215.svg") no-repeat center
-                center;
+              background: url("../assets/images/footer/fill-215.svg") no-repeat
+                center center;
               background-size: 15px 15px;
             }
             .facebook {
@@ -125,8 +125,8 @@ export default {
               height: 28px;
               border: 1px solid #121212;
               border-radius: 50%;
-              background: url("../assets/footer/fill-220.svg") no-repeat center
-                center;
+              background: url("../assets/images/footer/fill-220.svg") no-repeat
+                center center;
               background-size: 15px 15px;
             }
             .instagram {
@@ -134,8 +134,8 @@ export default {
               height: 28px;
               border: 1px solid #121212;
               border-radius: 50%;
-              background: url("../assets/footer/fill-276.svg") no-repeat center
-                center;
+              background: url("../assets/images/footer/fill-276.svg") no-repeat
+                center center;
               background-size: 15px 15px;
             }
             .youtube {
@@ -143,8 +143,8 @@ export default {
               height: 28px;
               border: 1px solid #121212;
               border-radius: 50%;
-              background: url("../assets/footer/fill-227.svg") no-repeat center
-                center;
+              background: url("../assets/images/footer/fill-227.svg") no-repeat
+                center center;
               background-size: 18px 18px;
             }
           }
@@ -203,7 +203,8 @@ export default {
             .logo-box {
               width: 34px;
               height: 34px;
-              background: url("../assets/footer/group-5.svg") no-repeat center;
+              background: url("../assets/images/footer/group-5.svg") no-repeat
+                center;
               background-size: 28px 28px;
             }
             .telInfo-box {
@@ -233,7 +234,8 @@ export default {
             .logo-box {
               width: 34px;
               height: 34px;
-              background: url("../assets/footer/group-9.svg") no-repeat center;
+              background: url("../assets/images/footer/group-9.svg") no-repeat
+                center;
               background-size: 28px 28px;
             }
             .mail-box {

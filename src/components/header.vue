@@ -23,7 +23,7 @@ export default {
       categories: [
         {
           id: 1,
-          name: "유디션",
+          name: "유디션 클래스",
         },
         {
           id: 2,

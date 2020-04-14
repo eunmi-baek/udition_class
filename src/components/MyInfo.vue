@@ -1,6 +1,5 @@
 <template>
   <div class="info-container">
-    <Header />
     <section>
       <div class="info">
         <img />
@@ -23,51 +22,33 @@
         </div>
         <button>프로필 편집</button>
       </div>
-      <Bookmark />
     </section>
-    <Footer />
   </div>
 </template>
 
 <script>
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
-import Bookmark from "@/components/myInfo/bookmark";
-
 export default {
   name: "myInfo",
-  components: {
-    Header,
-    Footer,
-    Bookmark,
-  },
+  components: {},
 };
 </script>
 
 <style scoped lang="scss">
 .info-container {
-  width: 100vw;
-
-  //나중에 지우기
-  header {
-    height: 88px;
-    border-bottom: 1px solid red;
-  }
-
   section {
-    width: 1082px;
-    margin: 36px auto 100px;
+    width: 362px;
+    margin-top: 36px;
+    margin-bottom: 100px;
     display: flex;
 
     .info {
-      width: 362px;
+      width: 100%;
       height: 555px;
       border-radius: 12px;
       border: solid 1px #dddee4;
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin-right: 50px;
 
       img {
         width: 142px;
@@ -105,7 +86,7 @@ export default {
           .image {
             width: 21px;
             height: 20px;
-            background: url("../../assets/images/myInfo/invited.png") no-repeat
+            background: url("../assets/images/myInfo/invited.png") no-repeat
               center center;
             background-size: cover;
           }
@@ -113,7 +94,7 @@ export default {
           .image2 {
             width: 21px;
             height: 18px;
-            background: url("../../assets/images/myInfo/heart.png") no-repeat
+            background: url("../assets/images/myInfo/heart.png") no-repeat
               center center;
             background-size: cover;
           }
