@@ -18,8 +18,8 @@ export default {
   name: "myProfile",
   components: {
     BookmarkCard,
-    Header
-  }
+    Header,
+  },
 };
 </script>
 

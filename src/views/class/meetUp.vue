@@ -24,8 +24,8 @@ export default {
   components: {
     Card,
     Header,
-    Footer
-  }
+    Footer,
+  },
 };
 </script>
 <style scoped lang="scss">

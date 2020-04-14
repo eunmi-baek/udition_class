@@ -1,66 +1,77 @@
 <template>
-  <div class="join-wrapper">
-    <div class="join-container">
-      <!-- name -->
-      <div class="name-box">
-        <div class="Title">이름</div>
-        <input type="text" class="name" placeholder="이름을 입력해주세요" />
-      </div>
-      <!-- email -->
-      <div class="email-box">
-        <div class="Title">이메일</div>
-
-        <input type="text" class="email" placeholder="이메일을 입력해주세요" />
-      </div>
-      <!-- phone -->
-      <div class="cellPhone-box">
-        <div class="Title">휴대전화</div>
-        <div class="input-box">
-          <input type="text" class="phone" placeholder="전화번호" />
-          <div @click="setCertification">번호인증</div>
+  <div>
+    <Header />
+    <div class="join-wrapper">
+      <div class="join-container">
+        <!-- name -->
+        <div class="name-box">
+          <div class="Title">이름</div>
+          <input type="text" class="name" placeholder="이름을 입력해주세요" />
         </div>
-      </div>
-      <!-- confirm 숨겨져 있어야해-->
-      <div class="confirm-box" v-if="certification">
-        <input
-          type="text"
-          class="confirmNum"
-          placeholder="인증번호를 입력해주세요"
-        />
-      </div>
-      <!-- pw -->
-      <div class="pw-box">
-        <div class="Title">비밀번호</div>
-        <input type="text" class="pw" placeholder="비밀번호를 입력해주세요" />
-      </div>
-      <div class="terms-container">
-        <div class="terms-box">
-          <div
-            class="checkBox"
-            v-for="(checkList, i) in checkLists"
-            :key="i"
-            @click="setCheck(i)"
-          >
-            <div class="checkIcon-box" v-if="checkList.checked"></div>
-            <div class="checkedIcon-box" v-else></div>
+        <!-- email -->
+        <div class="email-box">
+          <div class="Title">이메일</div>
+
+          <input
+            type="text"
+            class="email"
+            placeholder="이메일을 입력해주세요"
+          />
+        </div>
+        <!-- phone -->
+        <div class="cellPhone-box">
+          <div class="Title">휴대전화</div>
+          <div class="input-box">
+            <input type="text" class="phone" placeholder="전화번호" />
+            <div @click="setCertification">번호인증</div>
+          </div>
+        </div>
+        <!-- confirm 숨겨져 있어야해-->
+        <div class="confirm-box" v-if="certification">
+          <input
+            type="text"
+            class="confirmNum"
+            placeholder="인증번호를 입력해주세요"
+          />
+        </div>
+        <!-- pw -->
+        <div class="pw-box">
+          <div class="Title">비밀번호</div>
+          <input type="text" class="pw" placeholder="비밀번호를 입력해주세요" />
+        </div>
+        <div class="terms-container">
+          <div class="terms-box">
             <div
-              :class="{
-                checkContent_required: checkList.required == true,
-                checkContent: checkList.required == false,
-              }"
+              class="checkBox"
+              v-for="(checkList, i) in checkLists"
+              :key="i"
+              @click="setCheck(i)"
             >
-              {{ checkList.content }}
+              <div class="checkIcon-box" v-if="checkList.checked"></div>
+              <div class="checkedIcon-box" v-else></div>
+              <div
+                :class="{
+                  checkContent_required: checkList.required == true,
+                  checkContent: checkList.required == false,
+                }"
+              >
+                {{ checkList.content }}
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <Footer />
   </div>
 </template>
 
 <script>
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+
 export default {
-  components: {},
+  components: { Header, Footer },
   data() {
     return {
       checkLists: [
@@ -98,6 +109,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 100px 0;
   .join-container {
     margin: auto;
     div {

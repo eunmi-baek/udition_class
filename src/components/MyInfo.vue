@@ -28,7 +28,8 @@
 
 <script>
 export default {
-  name: "myInfo"
+  name: "myInfo",
+  components: {},
 };
 </script>
 
