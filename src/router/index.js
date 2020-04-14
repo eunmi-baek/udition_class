@@ -21,11 +21,11 @@ export default new VueRouter({
         {
             path: '/',
             name: 'main',
-            component: Main  
+            component:Main  
         },
         { 
             path:'/login',
-            name: 'Login',
+            name: 'login',
             component:Login
         },
         {

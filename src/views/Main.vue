@@ -23,7 +23,8 @@
       <div class="bottom-banner">
         <div>
           유디션은 이러이러하구요, 이러이러합니다.
-          <br />따라서 100000000명이 쓰고요, ~~~~~~합니다. <br />많은 사람들이
+          <br />따라서 100000000명이 쓰고요, ~~~~~~합니다.
+          <br />많은 사람들이
           썼으면 좋겠어요.
         </div>
         <div class="strong">더 알아보고 싶습니까?</div>
@@ -90,7 +91,7 @@ export default {
   section {
     .top-banner {
       height: 513px;
-      background: url("https://lh3.googleusercontent.com/proxy/nS_0P3MXh_Vtfo_hUeOQpouTaY5izhSSlozLYtmmdrsOT0FBpJ5Lqd9De7B83_eMfhV8r4a6KS7gqCFwko4bEFMsxdH9lL7Qx4bVNJg1fhRopw")
+      background: url("https://t1.daumcdn.net/thumb/R720x0/?fname=http://t1.daumcdn.net/brunch/service/user/21H1/image/frnwiL8Kwpqe0OiAVdaJOU2Vl2g.jpg")
         no-repeat center center;
       background-size: cover;
     }
@@ -185,7 +186,7 @@ export default {
 
     .bottom-banner {
       height: 564px;
-      background: url("https://lh3.googleusercontent.com/proxy/nS_0P3MXh_Vtfo_hUeOQpouTaY5izhSSlozLYtmmdrsOT0FBpJ5Lqd9De7B83_eMfhV8r4a6KS7gqCFwko4bEFMsxdH9lL7Qx4bVNJg1fhRopw")
+      background: url("https://t1.daumcdn.net/thumb/R720x0/?fname=http://t1.daumcdn.net/brunch/service/user/21H1/image/frnwiL8Kwpqe0OiAVdaJOU2Vl2g.jpg")
         no-repeat center center;
       background-size: cover;
       display: flex;
