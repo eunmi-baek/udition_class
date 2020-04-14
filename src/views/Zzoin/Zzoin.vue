@@ -52,7 +52,7 @@
               <div
                 :class="{
                   checkContent_required: checkList.required == true,
-                  checkContent: checkList.required == false,
+                  checkContent: checkList.required == false
                 }"
               >
                 {{ checkList.content }}
@@ -67,8 +67,8 @@
 </template>
 
 <script>
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import Header from "@/components/Heyhey";
+import Footer from "@/components/Fufu";
 
 export default {
   components: { Header, Footer },
@@ -79,16 +79,16 @@ export default {
           id: 1,
           required: true,
           content: "이용약관 및 개인정보 처리방침 동의",
-          checked: false,
+          checked: false
         },
         {
           id: 2,
           required: false,
           content: "이벤트 및 새로운 클래스 소식 알림 동의 (선택)",
-          checked: false,
-        },
+          checked: false
+        }
       ],
-      certification: false,
+      certification: false
     };
   },
   methods: {
@@ -98,8 +98,8 @@ export default {
     setCertification() {
       // 여기에 휴대폰 인증 조건도 달아야해
       this.certification = !this.certification;
-    },
-  },
+    }
+  }
 };
 </script>
 
@@ -134,10 +134,6 @@ export default {
         margin-bottom: 9px;
       }
     }
-    .name-box {
-    }
-    .email-box {
-    }
     .cellPhone-box {
       .input-box {
         width: 356px;
@@ -156,10 +152,6 @@ export default {
           cursor: pointer;
         }
       }
-    }
-    .confirm-box {
-    }
-    .pw-box {
     }
     .terms-container {
       .terms-box {

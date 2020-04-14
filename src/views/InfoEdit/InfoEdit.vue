@@ -39,8 +39,8 @@
 </template>
 
 <script>
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import Header from "@/components/Heyhey";
+import Footer from "@/components/Fufu";
 import MyInfo from "@/components/MyInfo";
 
 export default {
