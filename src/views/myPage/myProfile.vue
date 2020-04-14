@@ -12,7 +12,7 @@
 
 <script>
 import BookmarkCard from "@/components/BookmarkCard";
-import Header from "@/components/header";
+import Header from "@/components/Header";
 
 export default {
   name: "myProfile",
