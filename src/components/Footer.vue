@@ -19,7 +19,7 @@
             </div>
           </div>
           <div class="topRight-wrapper">
-            <div class="kakaoQuestion"></div>
+            <div class="kakaoQuestion">카카오 채널로 문의</div>
           </div>
         </div>
       </div>
@@ -109,6 +109,7 @@ export default {
             margin: 32px 0;
             div {
               margin-right: 11px;
+              cursor: pointer;
             }
 
             .twitter {
@@ -162,6 +163,7 @@ export default {
               width: 148px;
               margin-right: 28px;
               padding: 5px 0;
+              cursor: pointer;
             }
           }
         }
@@ -172,6 +174,13 @@ export default {
             height: 48px;
             border-radius: 8px;
             border: solid 1px #121212;
+            font-size: 14px;
+            font-weight: bold;
+            text-indent: 130px;
+            line-height: 48px;
+            background: url("../assets/images/footer/kakao.png") no-repeat 108px
+              center;
+            background-size: 15px 13px;
           }
         }
       }
