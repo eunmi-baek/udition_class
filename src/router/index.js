@@ -9,7 +9,7 @@ import PaymentFinish from "@/views/PaymentFinish/PaymentFinish"
 import MeetUp from "@/views/Class/MeetUp"
 import MyProfile from "@/views/MyPage/MyProfile"
 import Tutor from "@/views/Tutor/Tutor"
-import join from "@/views/join/join"
+import Join from "@/views/Join/Join"
 import Payment from "@/views/Payment/Payment"
 
 Vue.use(VueRouter);
@@ -21,7 +21,7 @@ export default new VueRouter({
         {
             path: '/',
             name: 'main',
-            component: Main  
+            component:Main  
         },
         { 
             path:'/login',
@@ -63,10 +63,11 @@ export default new VueRouter({
             name: 'tutor',
             component: Tutor
         },
+        
         {
             path:'/join',
             name: 'join',
-            component: join
+            component: Join
         },
         {
 

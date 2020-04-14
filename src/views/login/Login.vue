@@ -1,33 +1,43 @@
 <template>
-  <div class="login-wrapper">
-    <div class="login-container">
-      <div class="login-box">
-        <div class="facebook social"></div>
-        <div class="google social"></div>
-        <div class="horizon-bar"></div>
-        <div class="login-header">
-          <span class="email-login">이메일 로그인</span>
-          <span class="find-pw">비밀번호 찾기 ></span>
-        </div>
-        <input class="id-box" placeholder="이메일을 입력해 주세요" />
-        <input class="pw-box" placeholder="비밀번호를 입력해 주세요" />
-        <button class="login-button">로그인</button>
-        <div class="join-container">
-          <span>아직 가입하지 않으셨나요?</span>
-          <span>유디션 가입하기</span>
+  <div>
+    <Header />
+    <div class="login-wrapper">
+      <div class="login-container">
+        <div class="login-box">
+          <div class="facebook social"></div>
+          <div class="google social"></div>
+          <div class="horizon-bar"></div>
+          <div class="login-header">
+            <span class="email-login">이메일 로그인</span>
+            <span class="find-pw">비밀번호 찾기 ></span>
+          </div>
+          <input class="id-box" placeholder="이메일을 입력해 주세요" />
+          <input class="pw-box" placeholder="비밀번호를 입력해 주세요" />
+          <button class="login-button">로그인</button>
+          <div class="join-container">
+            <span>아직 가입하지 않으셨나요?</span>
+            <span>유디션 가입하기</span>
+          </div>
         </div>
       </div>
     </div>
+    <Footer />
   </div>
 </template>
 
 <script>
-export default {};
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+
+export default {
+  components: { Header, Footer },
+};
 </script>
 
 <style scoped lang="scss">
 .login-wrapper {
   width: 100vw;
+  margin: 100px 0;
   .login-container {
     width: 100%;
     height: 100%;

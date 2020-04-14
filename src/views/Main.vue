@@ -45,7 +45,7 @@ export default {
   components: {
     Header,
     Footer,
-    Card
+    Card,
   },
   data() {
     return {
@@ -56,14 +56,14 @@ export default {
           image:
             "https://i.pinimg.com/originals/87/70/d0/8770d03058a64bf76c19b343c735f28d.jpg",
           content:
-            "유디션이 엄선한 선생님과 체계적인 커리큘럼으로 완벽하게 배우기"
+            "유디션이 엄선한 선생님과 체계적인 커리큘럼으로 완벽하게 배우기",
         },
         {
           id: 2,
           name: "ONE DAY",
           image:
             "https://i.pinimg.com/originals/87/70/d0/8770d03058a64bf76c19b343c735f28d.jpg",
-          content: "삶에 필요한 기본 예능,하루만에 배우는 속성 클래스"
+          content: "삶에 필요한 기본 예능,하루만에 배우는 속성 클래스",
         },
         {
           id: 3,
@@ -71,11 +71,11 @@ export default {
           image:
             "https://i.pinimg.com/originals/87/70/d0/8770d03058a64bf76c19b343c735f28d.jpg",
           content:
-            "음악, 영화, 문학 모든 엔터테인먼트 장르를 아울러 함께 이야기를 나누는 곳"
-        }
-      ]
+            "음악, 영화, 문학 모든 엔터테인먼트 장르를 아울러 함께 이야기를 나누는 곳",
+        },
+      ],
     };
-  }
+  },
 };
 </script>
 
