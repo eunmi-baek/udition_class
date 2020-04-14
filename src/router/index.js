@@ -1,6 +1,6 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import Main from "@/views/Page"
+import Main from "@/views/Main"
 import Login from "@/views/Login/Login"
 import Spec from "@/views/Spec/Spec"
 import Bookmark from "@/views/Bookmark/Bookmark"
