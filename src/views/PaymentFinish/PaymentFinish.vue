@@ -10,17 +10,17 @@
       </div>
       <div class="body-wrapper">
         <div class="img-bg">
-          <img class="img" />
+          <img class="img" src="@/assets/images/spec/spec-img.jpg" />
           <div class="circle">
             <div class="circle-text">CLASS</div>
           </div>
         </div>
         <div class="body-info-wrapper">
-          <div class="body-title">
-            내 연애를 바꾼 노래들: 음악과 어쩌고 저쩌고를 해보다
-          </div>
+          <div class="body-title">내 연애를 바꾼 노래들: 음악과 어쩌고 저쩌고를 해보다</div>
           <div class="lecturer">by 작곡가 정성혜</div>
-          <div class="first-day"><span>첫 수업</span>4월 19일 일요일</div>
+          <div class="first-day">
+            <span>첫 수업</span>4월 19일 일요일
+          </div>
         </div>
       </div>
       <div class="info-wrapper">
@@ -43,15 +43,18 @@
         <button class="btn right">마이페이지</button>
       </div>
     </div>
+    <Footer />
   </div>
 </template>
 
 <script>
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 export default {
   components: {
-    Header
+    Header,
+    Footer
   }
 };
 </script>
@@ -60,7 +63,7 @@ export default {
 .payment-finish-wrapper {
   width: 100%;
   .pf-container {
-    margin: 100px auto 0;
+    margin: 100px auto 150px;
     width: 560px;
     .title-wrapper {
       .title {
