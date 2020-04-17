@@ -7,18 +7,21 @@
         <BookmarkCard />
       </div>
     </div>
+    <Footer />
   </div>
 </template>
 
 <script>
 import BookmarkCard from "@/components/BookmarkCard";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 export default {
   name: "myProfile",
   components: {
     BookmarkCard,
-    Header
+    Header,
+    Footer
   }
 };
 </script>
@@ -27,7 +30,7 @@ export default {
 .myProfile-wrapper {
   .myProfile-container {
     width: 1080px;
-    margin: 60px auto 0;
+    margin: 60px auto 150px;
     .title {
       width: 201px;
       height: 45px;
